@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/LOGO.svg" type="image/x-icon">
+    <title>Feed - Blámovi</title>
+    <link rel="stylesheet" href="./feed.css">
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="posicionamento_header posicionamento">
+            <div class="logo">
+                <img class="logoHeader" src="../img/logo/logo-branco.svg" alt="logo">
+                <span>Blámovi</span>
+            </div>
+            <div id="divBusca">
+                <alt="Buscar..." />
+                <input type="text" id="txtBusca" placeholder="" />
+                <button id="btnBusca">Buscar</button>
+            </div>
+
+            <a id="menu_barras" aria-label="abrir menu" aria-controls="menu_links" aria-expanded="false"
+                aria-haspopup="true" class="menu_barras" href="#" onclick="mostrarMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </a>
+
+            <nav id="menu_links">
+                <a href="../Home/home.html">Home</a>
+                <a href="../Favoritos/favoritos.html">Favoritos</a>
+                <a href="">Cadastro</a>
+                <a href="../perfilUsuarios/perfil.html">
+                    <div class="infoUser">
+                        <img src="./img/mufasaperfil.svg" alt="">
+                    </div>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <nav class="navSidebar">
+            <button>
+                <span>
+                    <a href="../Home/home.html">
+                        <img src="./img/Home.svg" alt="">
+                    
+                    <span class="textomenu">
+                        Home
+                    </span>
+                    </a>
+                </span>
+            </button>
+
+
+
+            <button>
+                <span>
+                    <a href="../Favoritos/favoritos.html">
+                    <img src="./img/Heart.svg" alt="">
+                    <span class="textomenu">
+                        Favoritos
+                    </span>
+                    </a>
+                </span>
+            </button>
+
+
+
+            <button>
+                <span>
+                    <a href="../perfilUsuarios/perfil.html">
+                    <img src="./img/User.svg" alt="">
+                    <span class="textomenu">
+                        Perfil
+                    </span>
+                    </a>
+                </span>
+            </button>
+        </nav>
+    </aside>
+
+    <main>
+        <!--Formulário de envio-->
+        <div class="newPost">
+            <div class="infoUser">
+                <img src="./img/mufasaperfil.svg" alt="">
+            </div>
+            <form action="" class="formPost">
+                <textarea name="textarea" placeholder="O que você assistiu recentemente?"></textarea>
+
+                <div class="iconsUser">
+                    <div class="icons">
+                        <button class="btnFileForm"><img src="./img/iconImg.svg" alt="Adicione uma imagem"></button>
+                        <button class="btnFileForm"><img src="./img/iconLocal.svg" alt="Adicione um local"></button>
+                        <button class="btnFileForm"><img src="./img/iconAnexo.svg" alt="Anexe um arquivo"></button>
+                    </div>
+                    <button class="btnFileForm"><img src="./img/iconSend.svg" alt="Publicar"></button>
+                </div>
+            </form>
+        </div>
+
+        <ul class="posts">
+            <li class="post">
+                <div class="infoUserPost">
+                    <div class="imgUserPost">
+                        <img src="./img/madrigalperfil.svg" alt="">
+                    </div>
+                    <div class="nameAndHour">
+                        <strong>Antônio Madrigal</strong>
+                        <p>4m atrás</p>
+                        <p class="colorir_texto_filmes">Assistiu - Toy Story 2</p>
+                    </div>
+                </div>
+            </li>
+            <p class="textoPost">Acabei de assistir Toy Story 2 !!!! Que filme maravilhoso, para mim fica em primeiro
+                lugar nos filmes Pixar. Assisti pelo YouTube. </p>
+
+            <img class="balanoalvo" src="./img/balanoalvo.svg" alt="">
+
+            <div class="actionBtnPost">
+                <button type="button" class="filesPost"><img src="./img/like.svg"
+                        alt="Curtir"><span>Curtir</span></button>
+                <button type="button" class="filesPost"><img src="./img/comentar.svg"
+                        alt="Comentar"><span>Comentar</span></button>
+                <button type="button" class="filesPost"><img src="./img/recomendar.svg"
+                        alt="Recomendar"><span>Recomendar</span></button>
+            </div>
+
+            <li class="comentarios">
+                <div class="infoUserComments">
+                    <div class="imgUserComments">
+                        <img src="./img/buzzlightyear.svg" alt="">
+                    </div>
+                    <div class="nameAndHour">
+                        <strong>Buzz Lightyear</strong>
+                        <p>2m atrás</p>
+                    </div>
+                </div>
+            </li>
+            <p class="textoComments">Que bom que gostou!</p>
+            <div class="actionBtnComments">
+                <button type="button" class="filesPostComment"><img src="./img/like.svg" alt="Curtir"></button>
+                <button type="button" class="filesPostComment"><img src="./img/comentar.svg" alt="Comentar"></button>
+                <button type="button" class="filesPostComment"><img src="./img/recomendar.svg"
+                        alt="Recomendar"></button>
+            </div>
+        </ul>
+
+        <ul class="posts">
+            <li class="post">
+                <div class="infoUserPost">
+                    <div class="imgUserPost">
+                        <img src="./img/rozperfil.svg" alt="">
+                    </div>
+                    <div class="nameAndHour">
+                        <strong>Roz</strong>
+                        <p>Ontem</p>
+                        <p class="colorir_texto_filmes">Assistiu - À Prova de Fogo</p>
+                    </div>
+                </div>
+            </li>
+            <p class="textoPost">Muita gente criticando, mas não vê o contexto todo da história, ela foi maltrata por
+                ele por 7 anos aguentando calada, até que ela começou a se posicionar e não servir de<span
+                    id="pontos">...</span> <span id="mais"> empregada, pois até mulher ele procurava na internet,
+                    deixando ela de lado. A parte que ela ficou com ele somente pq ele ajudou a mãe dela com a
+                    quantidade de $, é somente um ponto do filme que poderia ser colocado outra história parecida, ele
+                    poderia ter pedido doação, vendido carro etc… O fato q ela não ficou com quem tinha mais condições
+                    financeiras, pq ele não tinha, ele apenas tinha um trocado que ajuntou para o barco dele, era as
+                    economias, mas quem era mais rico era o médico. Então não falem q foi por dinheiro, pq ela poderia
+                    nem ter voltado com ele, mesmo depois dele comprar a cadeira e a cama p mãe dela. Achei excelente o
+                    filme, só quem passa por isso sabe, as mulheres principalmente! Esse filme muito abençoado.</span>
+            </p>
+
+            <button onclick="leiaMais()" id="btnLeiaMais">Ver mais</button>
+
+            <img class="balanoalvo" src="./img/a-prova-de-fogo-1.jpg" alt="">
+
+            <div class="actionBtnPost">
+                <button type="button" class="filesPost"><img src="./img/like.svg"
+                        alt="Curtir"><span>Curtir</span></button>
+                <button type="button" class="filesPost"><img src="./img/comentar.svg"
+                        alt="Comentar"><span>Comentar</span></button>
+                <button type="button" class="filesPost"><img src="./img/recomendar.svg"
+                        alt="Recomendar"><span>Recomendar</span></button>
+            </div>
+        </ul>
+
+        <div class="carregamento">
+            <img src="./img/feedinfinito.svg" alt="">
+        </div>
+    </main>
+
+</body>
+
+</html>
