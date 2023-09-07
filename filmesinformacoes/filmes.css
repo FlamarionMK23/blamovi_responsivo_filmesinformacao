@@ -21,6 +21,7 @@
 }
 
 
+
 /* Cabeçalho */
 header {
     background-color: var(--preto);
@@ -83,7 +84,7 @@ header a {
     border-radius: 10px;
     width: 320px;
     height: 31px;
-margin-inline: auto;
+    margin-inline: auto;
 }
 
 #txtBusca {
@@ -109,12 +110,12 @@ margin-inline: auto;
 }
 
 .logo_no_header {
-width: 160px;
+    width: 160px;
 }
 
 /* Filmes */
 
-.banner_1{
+.banner_1 {
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -122,7 +123,7 @@ width: 160px;
     margin-right: 20px;
 }
 
-.superbanner{
+.superbanner {
     margin-top: 20px;
     color: #ffffff;
     text-align: right;
@@ -132,60 +133,94 @@ width: 160px;
 }
 
 
-.img_rec{
-height: 100px;
-justify-content: right;
-align-items: right;
-margin-bottom: 70px;
+.img_rec {
+    height: 100px;
+    justify-content: right;
+    align-items: right;
+    margin-bottom: 70px;
 
 }
-h2{
+
+h2 {
     color: var(--amarelo);
     font-size: 37px;
     text-align: left;
     margin: -100px 0px 0px 60px;
-    }
+}
 
-h3{
+h3 {
     color: var(--branco);
     font-size: 12px;
     text-align: left;
     margin-left: 60px;
- }
+}
 
-.paragrafo_inicial{
-   color: var(--branco);
+.paragrafo_inicial {
+    color: var(--branco);
     font-size: 12px;
     text-align: left;
     margin: 5px 0px 0px 60px;
 }
 
 
-.banner_trailer{
+.banner_trailer {
     display: flex;
     justify-content: space-around;
 }
-.imgbtm{
+
+
+
+.banner_box_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div_avaliacoes_filme{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-right: 5px;
+}
+
+.div_plataformas_filme{
+    display: flex;
+    align-items: center;
+    gap: -5px;
+}
+
+span{
+ color: #ffffff;
+ font-size: 20px;
+}
+
+.banner_img {
     height: 400px;
     margin: 0px 30px;
-      border-radius: 10px;
-      border: 1px solid white;
+    border-radius: 10px;
+    border: 1px solid white;
+    align-self: center;
+}
+
+.referências {
+    display: flex;
+    justify-content: center;
 }
 
 .botoes1 {
     display: flex;
     justify-content: center;
-   }
+}
 
-   .referências img{
-    height: 70px;
-    width: 70px;
+.referências img {
+    height: 30px;
+    width: 30px;
     justify-content: center;
     align-items: center;
-margin: 0px 0px 10px 30px;
-    }
+    margin: 10px 0px 10px 5px;
+}
 
- .bt1{
+.bt1 {
     border: solid 1px #FBC02C;
     color: #FBC02C;
     font-size: 12px;
@@ -193,53 +228,54 @@ margin: 0px 0px 10px 30px;
     width: 105px;
     border-radius: 10px;
     margin-right: 20px;
- }
+}
 
- .bt2 {
+.bt2 {
     border: solid 1px #FBC02C;
     color: #FBC02C;
     font-size: 12px;
     text-align: center;
     width: 105px;
     border-radius: 10px;
- }
+}
 
-.botoes2{
+.botoes2 {
     display: flex;
     justify-content: right;
 }
 
-.recomendar{
-background-color: red;
-color: #FBC02C;
-border: solid 1px #FBC02C;
-width: 140px;
-height: 30px;
-text-align: center;
-border-radius: 10px;
-margin-left: 15px;
-margin-right: 85px;
-text-decoration: none;
-font-weight: bold;
+.recomendar {
+    background-color: #ffffff;
+    color: #000000;
+    border: solid 1px #FBC02C;
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 85px;
+    text-decoration: none;
+    font-weight: bold;
 }
-.coração{
+
+.coração {
     width: 40px;
     height: 33px;
     margin-left: 20px;
     align-items: center;
 }
 
-.trailer a{
+.trailer a {
     height: 300px;
     margin: 0px 50px;
     width: 90%;
     border: #FBC02C;
-  }
+}
 
 
 /* seção 2 */
 
-.sinopse{
+.sinopse {
     margin: 25px 0px 65px 0px;
     padding: 0px 25px 0px 25px;
     color: white;
@@ -249,59 +285,57 @@ font-weight: bold;
     text-align: justify;
 }
 
-.topico{
+.topico {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.bonecos{
+.bonecos {
     width: 70px;
     height: 70px;
 }
 
 
-.informacoes_gerais{
-display: flex;
-justify-content: space-between;
+.informacoes_gerais {
+    display: flex;
+    justify-content: space-between;
 }
 
 
-.informacoes_esquerda{
-    
-}
+.informacoes_esquerda {}
 
 
-.elementos{
-display: flex;
-justify-content:space-around;
+.elementos {
+    display: flex;
+    justify-content: space-around;
 }
 
 
 /* Div dos atores */
 
-.grupo1{
+.grupo1 {
     display: flex;
     width: 100%;
     align-items: center;
 }
 
-.img1{
+.img1 {
     margin: 30px 0px 30px 30px;
     width: 70px;
     height: 70px;
 }
 
-.ator{
+.ator {
     color: #fbc02c;
     padding-left: 8px;
     font-size: 25px;
     text-align: left;
-       }
+}
 
-.personagem{
-    color:#E0EEEE;
+.personagem {
+    color: #E0EEEE;
     padding-left: 5px;
     font-size: 15px;
     text-align: left;
@@ -309,56 +343,56 @@ justify-content:space-around;
 
 
 
-.mais{
+.mais {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btmais{
-width: 50px;
-height: 50px;
+.btmais {
+    width: 50px;
+    height: 50px;
 }
 
 
 /* Aside */
 
-.informacoes_direita{
+.informacoes_direita {
     width: 80%;
 }
-    
 
-.Descubra{
+
+.Descubra {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.filmes_relacionados{
+.filmes_relacionados {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.tela1{
+.tela1 {
     width: 110px;
     height: 190px;
-    }
+}
 
-.elem_1{
+.elem_1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
 
 }
 
-.img2{
+.img2 {
     margin-top: 15px;
-     width: 60px;
+    width: 60px;
     height: 60px;
 }
 
-.titulo1{
+.titulo1 {
     color: #FBC02C;
     text-align: center;
     text-transform: uppercase;
@@ -366,7 +400,7 @@ height: 50px;
     margin-top: 15px;
 }
 
-.subtitulo1{
+.subtitulo1 {
     color: #ffffff;
     text-align: center;
     font-size: 15px;
@@ -374,20 +408,20 @@ height: 50px;
 }
 
 
-.subtitulo2{
+.subtitulo2 {
     color: #ffffff;
     text-align: center;
     font-size: 12px;
     width: 120px;
 }
 
-.detalhes_filme{
+.detalhes_filme {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.elem_2{
+.elem_2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -395,87 +429,89 @@ height: 50px;
 }
 
 
-.img3{
+.img3 {
     margin-top: 25px;
-        width: 115px;
+    width: 115px;
     height: 50px;
 }
 
 
-.subtitulo3{
-color: #FBC02C;
-font-size: 50px;
+.subtitulo3 {
+    color: #FBC02C;
+    font-size: 50px;
 }
 
-.separar_comentario{
+.separar_comentario {
     margin-top: 80px;
     border-top: 1px solid #FBC02C;
 }
 
 
-.Comentarios_filmes{
+.Comentarios_filmes {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
 }
 
-.img4{
+.img4 {
     margin-right: 20px;
     width: 40px;
-height: 43px;
+    height: 43px;
 }
 
-.Comentarios_todos{
+.Comentarios_todos {
     display: flex;
 }
 
 
-.img_coment{
-justify-content: center;
-align-items: center;
-margin: 10px 0px 0px 20px;
+.img_coment {
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 0px 20px;
 }
 
-.ricardo{
+.ricardo {
     width: 100px;
     height: 100px;
     margin-top: 105px;
 }
 
 
-.marcos{
+.marcos {
     width: 100px;
     height: 100px;
     margin-top: 65px;
     border-radius: 50px;
 }
-.usuario1{
+
+.usuario1 {
     color: #FBC02C;
     font-size: 25px;
     margin-top: 100px;
     padding: 0px 0px 0px 30px;
 }
 
-.usuario2{
+.usuario2 {
     color: #FBC02C;
     font-size: 25px;
     margin-top: 60px;
     padding: 0px 0px 0px 30px;
 }
 
-.comentario_texto{
+.comentario_texto {
     color: #ffffff;
     text-align: justify;
     padding: 0px 50px 0px 30px;
 }
-.like{
+
+.like {
     width: 35px;
     height: 35px;
     margin-left: 25px;
 }
 
-.figurinhas{
+.figurinhas {
     width: 30px;
     height: 30px;
 }
@@ -502,7 +538,8 @@ footer>div {
     justify-content: space-evenly;
     color: var(--branco);
 }
-footer>div>span{
+
+footer>div>span {
     margin-top: 10px;
     color: var(--amarelo);
     text-align: center;
@@ -516,47 +553,94 @@ footer>div>img {
 
 /* RESPONSIVIDADE */
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
 
-    h2{
+    h2 {
         font-size: 28px;
         text-align: left;
         margin: -100px 0px 0px 60px;
-        }
+    }
 
-        .botoes2 {
-            display: flex;
-            justify-content: center;
-        }
+    .botoes2 {
+        display: flex;
+        justify-content: center;
+    }
 
-        .botoes2 {
-            align-items: center;
-        }
-
+    .botoes2 {
+        align-items: center;
+    }
 
     .banner_trailer {
         flex-direction: column;
         justify-content: center;
     }
 
-
-
-    .imgbtm{
+    .banner_img {
         height: 400px;
-        margin: 0px 30px;
-          border-radius: 10px;
-          border: 1px solid white;
-              }
+        margin: 10px 30px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+
+    .subtitulo3 {
+        font-size: 35px;
+    }
+
+    .referências img {
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        margin: 10px 0px 10px 5px;
+    }
+
+   .trailer1 iframe{
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    .subtitulo3 {
+        font-size: 35px;
+    }
+
+   .trailer1 iframe{
+        width: 88%;
+    }
+
+    .ator {
+
+        padding-left: 8px;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .tela1 {
+        width: 82px;
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 680px){
+
+    .banner_img {
+        height: 340px;
+            }
+    h2 {
+        font-size: 21px;
+    }
+
+    .superbanner {
+        font-size: 30px;
+}
+
+.comentario_texto {
+    padding: 0px 14px 0px 30px;
     
-   
-       .referências img{
-        height: 70px;
-        width: 70px;
-               align-items: center;
-    margin: 0px 0px 10px 30px;
-        }
+}
 
-
-
+.trailer1 iframe{
+    width: 100%;
+}
 
 }
