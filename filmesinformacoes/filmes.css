@@ -640,7 +640,37 @@ footer>div>img {
 }
 
 .trailer1 iframe{
-    width: 100%;
+    width: 90%;
 }
 
+.tela1 {
+    width: 65px;
+    height: 190px;
+}
+
+
+.img_rec {
+    height: 70px;
+    margin-bottom: 96px;
+}
+
+
+.informacoes_direita {
+ display: none;
+}
+
+}
+
+@media screen and (max-width: 523px){
+    h2 {
+        font-size: 11px;
+    }
+
+    .superbanner {
+        font-size: 20px;
+    }
+
+    .separar_comentario {
+        display: none;
+    }   
 }
